@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Link - Cattfly0</title>
+    <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/center.svg" type="image/svg+xml">
+</head>
+<body>
+    <div id="app-container" class="container">
+        <header>
+            <h1>Pusat Link</h1>
+            <p>Cari dan download file yang kamu cari di bawah ini!</p>
+            <div class="top-controls">
+                <div id="themeToggleBtn" class="theme-toggle" role="button" aria-label="Toggle gelap/terang">
+                    <img id="themeIcon" src="assets/dark-light.svg" alt="Toggle theme">
+                </div>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Ketik nama file atau kode..." aria-label="Pencarian link">
+            <div id="searchLoader" class="search-loader"></div>
+        </div>
+
+        <div class="controls-row">
+            <div class="filter-container">
+                <label for="categoryFilter">Kategori:</label>
+                <select id="categoryFilter">
+                    <option value="">Semua</option>
+                </select>
+            </div>
+
+            <div class="sort-container">
+                <label for="sortSelect">Urutkan:</label>
+                <select id="sortSelect">
+                    <option value="default">Default</option>
+                    <option value="name">Nama (A-Z)</option>
+                </select>
+            </div>
+
+            <div class="bookmark-tab">
+                <button id="showAll" class="tab-btn active">Semua</button>
+                <button id="showBookmarks" class="tab-btn"><img src="assets/favorit.svg" alt="favorit" class="inline-fav"></button>
+            </div>
+        </div>
+
+        <div id="mainLoader" class="loader-wrapper">
+            <div class="spinner"></div>
+            <p>Memuat data...</p>
+        </div>
+
+        <main id="link-container" class="grid-container"></main>
+
+        <div id="pagination" class="pagination"></div>
+
+        <footer>
+            <div class="social-links social-fixed">
+                <a href="https://www.tiktok.com/@cattfly0" target="_blank" rel="noopener noreferrer" aria-label="TikTok cattfly0">
+                    <img src="assets/tiktok.svg" alt="TikTok">
+                </a>
+                <a href="https://www.instagram.com/cattfly0" target="_blank" rel="noopener noreferrer" aria-label="Instagram cattfly0">
+                    <img src="assets/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+            <p>&copy; 2025 Cattfly0 Download Center</p>
+        </footer>
+    </div>
+
+    
+
+        <div id="donation-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <button id="donateDismiss" class="modal-close">×</button>
+            <h2>Dukung Pengembang</h2>
+            <p class="donation-desc">Luangkan waktu anda sedikit dengan melewati iklan yang ada di link ini dan kembali ke halaman semula setelah menyelesaikkannya, thannkss you ^^</p>
+            <a class="btn-donate" id="openAdLink" href="https://besargaji.com/UgMCwo1E" target="_blank" rel="noopener noreferrer" role="button">Lanjutkan</a>
+            <div class="modal-actions">
+                <label><input type="checkbox" id="dontShowDonation"> Jangan tampilkan lagi</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
