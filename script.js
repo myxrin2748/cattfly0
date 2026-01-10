@@ -1,5 +1,5 @@
 // Konfigurasi API
-const SHEETDB_URL = 'https://sheetdb.io/api/v1/3oxb43bnmmd8u'; 
+const SHEETDB_URL = 'https://sheetdb.io/api/v1/6f6eekubj5k2n'; 
 
 let allRows = [];
 let filteredRows = [];
